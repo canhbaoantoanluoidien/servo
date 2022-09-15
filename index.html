@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SERVO MOTOR CONTROLLER</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>	
+        <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body style="background-color:rgb(36, 75, 2);">
+       <center> <img  src="./dien.png" alt="bình thường" width="30%" style="border-radius: 10px;"> </center>
+        <div class = "wrapper">
+            <h1 style="color: rgb(248, 248, 5);text-align: center;">SERVO MOTOR CONTROLLER</h1>
+           
+          </br>
+          </br>
+            <div class="progress">
+                <div class="Value" id="SelectValueRed"></div>		<!-- indicate value to website-->
+                <input class="slider" type="range" min="0" max="180" value="0" id="sliderRed"> <!-- create slider-->
+                
+            </div>
+            <div class="progress">
+                <div class="Value" id="SelectValueGreen"></div>		<!-- indicate value to website-->
+                <input class="slider" type="range" min="0" max="180" value="0" id="sliderGreen"> <!-- create slider-->
+                
+            </div>
+         
+             
+            <img name="ser" src="./ser.png" alt="bình thường" width="30%" style="border-radius: 10px;">
+            <p style="color: rgb(255, 255, 255);text-align: center;font-size: 20px;">Servo 180 độ - 8.4VDC</p>
+           
+            <!-- <div class="progress">
+                <div class="Value" id="SelectValueBlue"></div>		
+                <input class="slider" type="range" min="0" max="180" value="0" id="sliderBlue"> 
+                
+            </div> -->
+            <script src="script.js"></script>
+        </div>
+    </body>
+</html>
